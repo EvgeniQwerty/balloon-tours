@@ -1,0 +1,72 @@
+.about-section
+    padding-right: 8%
+    padding-left: 8%
+    
+    @include respond(tab-port)
+        height: 90rem
+    @include respond(phone)
+        height: 100rem
+        
+
+    &__wrappers
+        display: flex
+        justify-content: space-between
+        @include respond(tab-port)
+            flex-direction: column
+
+    &__title
+        text-align: center  
+        margin-bottom: 8rem  
+
+    &__button-wrapper
+        padding: 1rem
+        border-bottom: 0.1rem solid #A14F03
+        width: 19rem
+        transition: all .5s
+        backface-visibility: hidden
+        &:hover
+            background: $brown-color-light
+            box-shadow: $box-shadow-hard
+            transform: translateY(-.2rem)
+            a
+                color: $white-color
+        &:active
+            transform: translateY(0)
+
+    &__learn-more
+        font-weight: 700
+        font-size: 1.6rem
+        line-height: 1.9rem
+        letter-spacing: .2rem
+        color: $brown-color-light
+        text-decoration-line: none  
+
+    &__left-wrapper
+        margin-bottom: 5rem
+
+    // &__right-wrapper  
+    //     position: relative  
+
+    // &__img1 
+    //     position: absolute
+    //     width: 31.8rem
+    //     height: 20rem  
+    //     top: 13rem
+    //     right: 17rem
+    //     z-index: 3
+
+    // &__img2 
+    //     position: absolute
+    //     width: 31.8rem
+    //     height: 20rem  
+    //     top: 4rem
+    //     right: 0rem
+    //     z-index: 2
+
+    // &__img3 
+    //     position: absolute
+    //     width: 31.8rem
+    //     height: 20rem  
+    //     top: 0rem
+    //     right: 20rem  
+    //     z-index: 1

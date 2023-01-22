@@ -1,0 +1,35 @@
+.composition
+    
+    position: relative
+    width: 100%
+    &__img
+        //width: 31.8rem\
+        width: 80%
+        @include respond(tab-port)
+            width: 60%
+        @include respond(big-screen)
+            width: 60%    
+        //height: 20rem
+        border-radius: .5rem
+        box-shadow: $box-shadow-light
+        position: absolute
+        z-index: 10
+        transition: all 0.3s
+        &_n1
+            top: 13rem
+            right: 17rem    
+        &_n2
+            top: 4rem
+            right: 0rem
+        &_n3    
+            top: 0rem
+            right: 20rem 
+
+        &:hover
+            outline: 1rem $brown-color-light solid
+            outline-offset: 1rem
+            transform: scale(1.1)
+            z-index: 20    
+
+    &:hover &__img:not(:hover) 
+        transform: scale(0.9)           

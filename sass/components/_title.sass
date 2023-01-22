@@ -1,0 +1,23 @@
+.title
+    //color: #A24F03
+    font-weight: 900
+    font-size: 3.6rem
+    @include respond(phone)
+        font-size: 3.2rem
+    letter-spacing: 1rem
+    text-transform: uppercase
+    background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%)
+    -webkit-background-clip: text
+    color: transparent
+    transition: all .5s
+    backface-visibility: hidden
+    position: relative
+    z-index: 20
+
+    &:hover
+        transform: scale(102%)
+        filter: drop-shadow(0rem .4rem .4rem rgba(0, 0, 0, 0.25)) 
+    
+    &_white
+        color: white
+        filter: drop-shadow(0rem .4rem .4rem rgba(0, 0, 0, 0.25))  

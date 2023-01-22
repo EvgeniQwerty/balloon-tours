@@ -1,0 +1,30 @@
+.cards-about-section  
+    margin-bottom: 8rem
+    
+    &__wrapper
+        padding-right: 8%
+        padding-left: 8%  
+        @include respond(tab-port)
+            padding-top: 100%
+            padding-bottom: 100%
+        @include respond(phone)
+            padding-top: 180%
+            padding-bottom: 180%    
+        display: flex
+        align-items: center
+        height: 75vh
+        background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/bg2.png) center / cover no-repeat
+        clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%)
+
+    &__cards
+        width: 100%
+        display: flex
+        justify-content: space-between
+        @include respond(tab-port)
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+    &__card
+        @include respond(tab-port)
+            margin-bottom: 2rem            
